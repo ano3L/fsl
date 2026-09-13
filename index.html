@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>    
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Financial Standing List</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src = ./script.js defer></script>
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script> 
+</head>
+
+<body>
+    <img src="img/CFMEU NSW logo1.png" alt="CFMEU NSW logo" class="main-photo">
+
+    <div id = "all">
+
+<table id ="fsl">
+<thead>
+    <th class = "main-heading" colspan="7">
+      FINANCIAL STANDING LIST
+    </th>
+</tr>
+    <!-- Background Headings -->
+
+    <tr>
+      <th class="section-heading">Organiser/Delegate</th>
+      <th class="section-heading">Job Site</th>
+      <th class="section-heading">Suburb</th>
+      <th class="section-heading">Builder</th>
+      <th class="section-heading">Sub-contractor</th>
+      <th class="section-heading">Trade</th>
+      <th class="section-heading"></th>
+    </tr>
+
+    <!-- Background Inputs -->
+
+    <tr id ="backgroundInputRow" class = "tg">
+      <td class="text"><input type = "text" class = "input" id = "organiser" placeholder= " Organiser/Delegate"> </td>
+      <td class="text"><input type = "text" class = "input" id = "jobSite" placeholder = " Job Site"></td>
+      <td class="text"><input type = "text" class = "input" id = "surburb" placeholder = " Surburb"></td>
+      <td class="text"><input type = "text" class = "input" id = "builder" placeholder = " Builder"></td>
+      <td class="text"><input type = "text" class = "input" id = "subContractor" placeholder = " Sub-contractor"></td>
+      <td class="text"><input type = "text" class = "input" id = "trade" placeholder = " Trade"> </td>
+    </tr>
+
+      <!-- Member Headings -->
+
+      <tr>
+        <th class="section-heading">Surname</th>
+        <th class="section-heading">First Name</th>
+        <th class="section-heading">Date of Birth</th>
+        <th class="section-heading">Union No.</th>
+        <th class="section-heading">Financial Status ($)</th>
+        <th class="section-heading">Notes from Membership File</th>
+        <th class="section-heading"></th>
+    </tr>
+</thead>
+
+<!-- Members -->
+<tbody id="peopleBody"></tbody>
+</table>
+
+<!-- Buttons -->
+
+<div id = buttonBox>
+<button
+    id="backgroundButton"
+    class="background-button"
+    type="button"
+    onclick="addBackground()">
+    Add background data
+</button>
+
+<button
+    class="person-button"
+    type="button"
+    onclick="addPerson()">
+    + Add person
+</button>
+
+<button
+    class="delete-button"
+    type="button"
+    onclick="deleteLastPerson()">
+    Delete last person
+</button>
+
+<button
+    class="excel-button"
+    type="button"
+    onclick="exportToExcel()">
+    📊 Export as Excel
+</button>
+
+</div> <div id="status"></div> </div>
+</div>
+
+</body>
+</html>
