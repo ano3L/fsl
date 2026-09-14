@@ -254,5 +254,11 @@ body {
 @media (min-width: 768px) {
   #fsl {
     padding: 0.25em 0.75em;
+        padding: 0.25em 0.75em;
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    padding: 10px;
+  }
   }
 }
