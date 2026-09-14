@@ -9,14 +9,23 @@ margin: 0;
 padding: 30px 20px;
 background: #ffffff;
 color: #252525;
-font-family: Arial, Helvetica, sans-serif;
+font-family: 'Inter';
+font-size: 14px;
+}
+
+
+.inter-text {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .main-photo {
-  width: 100%;        /* Scales the image to fill its container */
-  max-width: 450px;   /* Prevents the image from getting too large */
-  height: auto;       /* Maintains the original aspect ratio */
-  border-radius: 0px; /* Optional: rounds the corners of your photo */
+  width: 100%;        
+  max-width: 500px;   
+  height: auto;       
+  border-radius: 0px; 
   display: block;
   align-self: center;
   position: relative;
@@ -68,8 +77,9 @@ border-right: none;
 background: #ffffff;
 color: #000000;
 text-align: center;
-font-size: 22px;
-font-weight: bold;
+font-size: 30px;
+font-family: "Inter", sans-serif;
+font-weight: 750;
 padding: 18px !important;
 }
 
@@ -225,7 +235,7 @@ background: #146c43;
 text-align: center;
 margin-top: 12px;
 min-height: 20px;
-color: ##616161;
+color: #616161;
 font-size: 13px;
 }
 
@@ -254,11 +264,5 @@ body {
 @media (min-width: 768px) {
   #fsl {
     padding: 0.25em 0.75em;
-        padding: 0.25em 0.75em;
-    display: table;
-    width: 100%;
-    table-layout: fixed;
-    padding: 10px;
-  }
   }
 }
