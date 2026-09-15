@@ -9,23 +9,14 @@ margin: 0;
 padding: 30px 20px;
 background: #ffffff;
 color: #252525;
-font-family: 'Inter';
-font-size: 14px;
-}
-
-
-.inter-text {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+font-family: Arial, Helvetica, sans-serif;
 }
 
 .main-photo {
-  width: 100%;        
-  max-width: 500px;   
-  height: auto;       
-  border-radius: 0px; 
+  width: 100%;        /* Scales the image to fill its container */
+  max-width: 450px;   /* Prevents the image from getting too large */
+  height: auto;       /* Maintains the original aspect ratio */
+  border-radius: 0px; /* Optional: rounds the corners of your photo */
   display: block;
   align-self: center;
   position: relative;
@@ -77,9 +68,8 @@ border-right: none;
 background: #ffffff;
 color: #000000;
 text-align: center;
-font-size: 32px;
-font-family: "Inter", sans-serif;
-font-weight: 750;
+font-size: 22px;
+font-weight: bold;
 padding: 18px !important;
 }
 
@@ -151,6 +141,8 @@ font-size: 18px;
 line-height: 25px;
 cursor: pointer;
 }
+
+
 
 .remove-button:hover {
 color: #c0392b;
@@ -233,18 +225,14 @@ background: #146c43;
 
 #status {
 text-align: center;
-margin-top: 12px;
+margin-top: 20px;
+padding-top: 10px;
 min-height: 20px;
-color: #616161;
-font-size: 13px;
+color: #1e1b1b;
+font-size: 14px;
+font-weight: 400;
 }
 
-}
-
-@media (min-width: 768px) {
-  #fsl {
-    padding: 0.25em 0.75em;
-  }
 
 
 @media (max-width: 900px) {
@@ -388,4 +376,13 @@ font-size: 13px;
 
 #peopleBody .person-input-row td.remove-cell .remove-button {
     display: none !important;
+}
+
+
+
+@media (min-width: 768px) {
+  #fsl {
+    padding: 0.25em 0.75em;
+  }
+
 }
