@@ -2,6 +2,7 @@
 // Last updated: 12/09/26
 
 let backgroundAdded = false;
+let personAdded = false;
 
 // Get input value
 function getValue(id) {
