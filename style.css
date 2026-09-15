@@ -239,30 +239,153 @@ color: #616161;
 font-size: 13px;
 }
 
-
-
-@media (max-width: 900px) {
-
-body {
-    padding: 10px;
-}
-
-#all {
-    overflow-x: auto;
-}
-
-#fsl {
-    min-width: 1050px;
-}
-
-#buttonBox {
-    min-width: 1050px;
-}
-
 }
 
 @media (min-width: 768px) {
   #fsl {
     padding: 0.25em 0.75em;
   }
+}
+
+@media (max-width: 900px) {
+
+    #fsl {
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    /* Six actual data columns */
+    #fsl .col-1 {
+        width: 17%;
+    }
+
+    #fsl .col-2 {
+        width: 14%;
+    }
+
+    #fsl .col-3 {
+        width: 13%;
+    }
+
+    #fsl .col-4 {
+        width: 14%;
+    }
+
+    #fsl .col-5 {
+        width: 17%;
+    }
+
+    #fsl .col-6 {
+        width: calc(25% - 20px);
+    }
+
+    /* REMOVE COLUMN */
+    #fsl .col-remove {
+        width: 20px;
+    }
+
+    #fsl th,
+    #fsl td {
+        padding: 5px 4px;
+        font-size: 12px;
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-break: normal;
+        overflow: hidden;
+
+        vertical-align: middle;
+    }
+
+        /* Section headings */
+    .section-heading {
+        font-size: 11px !important;
+        line-height: 1.2;
+    }
+
+    /* Input text */
+    #fsl .input {
+        min-height: 30px;
+        padding: 5px 6px;
+        font-size: 12px;
+                width: 100%;
+        max-width: 100%;
+        min-width: 0;
+
+        box-sizing: border-box;
+
+        white-space: normal;
+        overflow: hidden;
+        text-overflow: clip;
+    }
+
+    /* Submitted person data */
+    #peopleBody .person-text-row td {
+        font-size: 12px;
+    }
+
+    /* Keep the X tiny */
+    #peopleBody .remove-button {
+        font-size: 11px;
+    }
+
+    /* =========================
+   SMALLER MOBILE INPUTS
+   ========================= */
+
+#fsl .input {
+    width: 100%;
+    min-width: 0;
+
+    min-height: 30px;
+
+    padding: 5px 6px;
+
+    font-size: 11px;
+
+    border-radius: 4px;
+}
+
+
+    /* Tiny remove cell */
+    #peopleBody .remove-cell {
+        width: 20px;
+        padding: 0 !important;
+        text-align: center;
+    }
+
+    /* Tiny X */
+    #peopleBody .remove-button {
+        width: 16px;
+        height: 16px;
+        min-width: 16px;
+        max-width: 16px;
+
+        padding: 0;
+
+        font-size: 11px;
+        line-height: 14px;
+
+        border-radius: 3px;
+    }
+
+  }
+
+
+
+    /* Submitted text */
+    #peopleBody .person-text-row td {
+        white-space: normal;
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+#peopleBody .person-input-row td.remove-cell {
+    padding: 0 !important;
+    width: 20px !important;
+    min-width: 20px !important;
+    max-width: 20px !important;
+}
+
+#peopleBody .person-input-row td.remove-cell .remove-button {
+    display: none !important;
 }
